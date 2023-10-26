@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+
+:root {
+  
+
+    --color-body: #b6cbce;
+   
+    --color-heading: #eef3db;
+
+    --color-base: #033f47;
+
+    --color-base2: #000000;
+
+    --color-brand:#d82e13;
+    
+    --color-brand2: #deff58;
+
+    --sidbar-width: 220px;
+
+    --font-base: "Bai Jamjuree";
+    
+}
+
+body{
+    background-color: var(--color-base2) ;
+    color: var(--color-body);
+    font-family: var(--font-base),sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+
+    color: var( --color-heading);
+   font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-brand);
+}
+
+
+
+img{
+    width: 88%;
+    justify-content: center;
+    border: 4px solid var(--color-brand);
+
+}
+
+
+
+
+  .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+
+.text-brand{
+
+    color: var(--color-brand)
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image:url(sky.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center ;
+
+
+}
+
+.full-height{
+
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom:3px solid rgba(255, 251, 251, 0.789);
+    
+
+}
+/* NAVIGATION BAR */
+
+.navbar{
+    background-color: var(--white);
+}
+
+.navbar .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.navbar .nav-link:hover{
+    color: var(--color-brand);
+    
+}
+
+.navbar .nav-link.active{
+    color: var(--color-brand)
+}
+
+@media(min-width: 992px){
+
+.navbar{
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background: linear-gradient( rgb(255, 255, 255),  rgb(255, 255, 255)),url(../Images/sidebar-hacker.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar-brand img{
+
+    border: 4px solid var(--color-base2)
+}
+
+/*CONTENT WRAPPER */
+#content-wrapper{
+    padding-left: var(--sidbar-width);
+}
+
+}
